@@ -2,7 +2,7 @@ starcluster start test2
 
 scp -i ~/.ssh/AWSKey.pem /home/ethan/AWSProject/stream_mpi.c ethan@IPHERE:/home/ethan/
 
-scp -i ~/.ssh/AWSKey.pem /home/ethan/AWSProject/stream_mpi.c ethan@3.237.28.163:/home/ethan/
+scp -i ~/.ssh/AWSKey.pem /home/ethan/AWSProject/stream_mpi.c ethan@3.238.27.95:/home/ethan/
 
 starcluster sshmaster smallcluster
 
@@ -136,4 +136,123 @@ Maximum Add MB/s 11889.60
 Minimum Triad MB/s 11455.93
 Average Triad MB/s 11612.93
 Maximum Triad MB/s 11813.55
+
+
+
+-------------------------------------------------------------
+February 10th: 1:24PM
+-------------------------------------------------------------
+
+One Node
+
+-------------------------------------------------------------
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       11873.4720       0.0028       0.0027       0.0029
+Scale:      11786.9261       0.0028       0.0027       0.0028
+Add:        11713.2064       0.0042       0.0041       0.0044
+Triad:      11527.4315       0.0043       0.0042       0.0044
+-------------------------------------------------------------
+Solution Validates
+-------------------------------------------------------------
+
+Two Nodes
+
+-------------------------------------------------------------
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       12020.2157       0.0027       0.0027       0.0028
+Scale:      11917.7524       0.0027       0.0027       0.0028
+Add:        11934.0007       0.0041       0.0040       0.0042
+Triad:      11636.7026       0.0042       0.0041       0.0043
+-------------------------------------------------------------
+Solution Validates
+-------------------------------------------------------------
+No. of nodes 2; nodes with errors: 0
+Minimum Copy MB/s 11896.63
+Average Copy MB/s 11958.42
+Maximum Copy MB/s 12020.22
+Minimum Scale MB/s 11917.75
+Average Scale MB/s 12021.65
+Maximum Scale MB/s 12125.55
+Minimum Add MB/s 11934.00
+Average Add MB/s 11977.83
+Maximum Add MB/s 12021.65
+Minimum Triad MB/s 11636.70
+Average Triad MB/s 11683.49
+Maximum Triad MB/s 11730.27
+
+Four Nodes
+
+-------------------------------------------------------------
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       12021.2923       0.0027       0.0027       0.0028
+Scale:      12345.2656       0.0027       0.0026       0.0028
+Add:        11781.7528       0.0042       0.0041       0.0043
+Triad:      11630.6523       0.0042       0.0041       0.0042
+-------------------------------------------------------------
+Solution Validates
+-------------------------------------------------------------
+No. of nodes 4; nodes with errors: 0
+Minimum Copy MB/s 11985.87
+Average Copy MB/s 12057.73
+Maximum Copy MB/s 12125.55
+Minimum Scale MB/s 12139.81
+Average Scale MB/s 12280.55
+Maximum Scale MB/s 12432.17
+Minimum Add MB/s 11642.09
+Average Add MB/s 11826.39
+Maximum Add MB/s 12018.06
+Minimum Triad MB/s 11583.14
+Average Triad MB/s 11667.08
+Maximum Triad MB/s 11756.30
+
+Six Nodes
+
+-------------------------------------------------------------
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       11708.7785       0.0028       0.0027       0.0029
+Scale:      11998.7241       0.0027       0.0027       0.0028
+Add:        11439.6609       0.0043       0.0042       0.0045
+Triad:      11483.3785       0.0043       0.0042       0.0043
+-------------------------------------------------------------
+Solution Validates
+-------------------------------------------------------------
+No. of nodes 6; nodes with errors: 0
+Minimum Copy MB/s 11708.78
+Average Copy MB/s 12013.60
+Maximum Copy MB/s 12186.10
+Minimum Scale MB/s 11998.72
+Average Scale MB/s 12247.78
+Maximum Scale MB/s 12436.78
+Minimum Add MB/s 11439.66
+Average Add MB/s 11718.13
+Maximum Add MB/s 11919.16
+Minimum Triad MB/s 11483.38
+Average Triad MB/s 11620.23
+Maximum Triad MB/s 11744.64
+
+Eight Nodes
+
+-------------------------------------------------------------
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       11855.6424       0.0028       0.0027       0.0028
+Scale:      12194.9598       0.0027       0.0026       0.0028
+Add:        11488.6209       0.0042       0.0042       0.0043
+Triad:      11461.1518       0.0043       0.0042       0.0045
+-------------------------------------------------------------
+Solution Validates
+-------------------------------------------------------------
+No. of nodes 8; nodes with errors: 0
+Minimum Copy MB/s 11247.61
+Average Copy MB/s 11907.09
+Maximum Copy MB/s 12232.75
+Minimum Scale MB/s 11510.95
+Average Scale MB/s 12120.00
+Maximum Scale MB/s 12412.63
+Minimum Add MB/s 11293.99
+Average Add MB/s 11633.01
+Maximum Add MB/s 12090.23
+Minimum Triad MB/s 11064.94
+Average Triad MB/s 11534.08
+Maximum Triad MB/s 11787.96
+
 
