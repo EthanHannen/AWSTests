@@ -2,8 +2,6 @@ starcluster start smallcluster
 
 scp -i ~/.ssh/AWSKey.pem /home/ethan/AWSProject/stream_mpi.c ethan@35.170.81.57:/home/ethan/
 
-scp -i ~/.ssh/AWSKey.pem ethan@35.170.81.57:/home/ethan/TestResults /home/ethan/AWSTests/
-
 starcluster sshmaster smallcluster
 
 cd /home/ethan
@@ -17,6 +15,11 @@ mpiexec -host master,node001,node002,node003,node004,node005 ./stream_mpi>Test6
 mpiexec -host master,node001,node002,node003,node004,node005,node006,node007 ./stream_mpi>Test8
 
 cat Test1 Test2 Test4 Test6 Test8 > TestResults
+cat TestResults
+(Select all in terminal and copy paste here)
+
+exit
+starcluster terminate smallcluster
 
 -------------------------------------------------------------
 February 9th: 5:40PM
