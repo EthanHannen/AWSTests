@@ -1,6 +1,6 @@
 starcluster start smallcluster
 
-scp -i ~/.ssh/AWSKey.pem /home/ethan/AWSProject/stream_mpi.c ethan@3.234.208.13:/home/ethan/
+scp -i ~/.ssh/AWSKey.pem /home/ethan/AWSProject/stream_mpi.c ethan@34.238.191.25:/home/ethan/
 
 starcluster sshmaster smallcluster
 
@@ -665,5 +665,210 @@ Minimum Triad MB/s 11270.59
 Average Triad MB/s 11590.73
 Maximum Triad MB/s 11767.98
 
+
+February 16  12:36PM
+
+-------------------------------------------------------------
+STREAM version $Revision: 5.8 $
+-------------------------------------------------------------
+This system uses 8 bytes per DOUBLE PRECISION word.
+-------------------------------------------------------------
+Array size = 2000000, Offset = 0
+Total memory required = 45.8 MB.
+Each test is run 10 times, but only
+the *best* time for each is used.
+-------------------------------------------------------------
+Printing one line per active thread....
+-------------------------------------------------------------
+Your clock granularity/precision appears to be be 2 microseconds.
+Each test below will take on the order of 1646 microseconds.
+   (= 823 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       12152.9996       0.0027       0.0026       0.0028
+Scale:      12388.5664       0.0026       0.0026       0.0027
+Add:        11831.6051       0.0041       0.0041       0.0041
+Triad:      11653.5420       0.0042       0.0041       0.0043
+-------------------------------------------------------------
+Solution Validates
+-------------------------------------------------------------
+-------------------------------------------------------------
+STREAM version $Revision: 5.8 $
+-------------------------------------------------------------
+This system uses 8 bytes per DOUBLE PRECISION word.
+-------------------------------------------------------------
+Array size = 2000000, Offset = 0
+Total memory required = 45.8 MB.
+Each test is run 10 times, but only
+the *best* time for each is used.
+-------------------------------------------------------------
+Printing one line per active thread....
+-------------------------------------------------------------
+Your clock granularity/precision appears to be be 1 microseconds.
+Each test below will take on the order of 1636 microseconds.
+   (= 1636 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       12260.6859       0.0027       0.0026       0.0029
+Scale:      12494.6684       0.0026       0.0026       0.0028
+Add:        11813.5543       0.0041       0.0041       0.0041
+Triad:      11730.2681       0.0041       0.0041       0.0042
+-------------------------------------------------------------
+Solution Validates
+-------------------------------------------------------------
+No. of nodes 2; nodes with errors: 0
+Minimum Copy MB/s 11856.69
+Average Copy MB/s 12058.69
+Maximum Copy MB/s 12260.69
+Minimum Scale MB/s 12131.03
+Average Scale MB/s 12312.85
+Maximum Scale MB/s 12494.67
+Minimum Add MB/s 11318.11
+Average Add MB/s 11565.83
+Maximum Add MB/s 11813.55
+Minimum Triad MB/s 11483.38
+Average Triad MB/s 11606.82
+Maximum Triad MB/s 11730.27
+-------------------------------------------------------------
+STREAM version $Revision: 5.8 $
+-------------------------------------------------------------
+This system uses 8 bytes per DOUBLE PRECISION word.
+-------------------------------------------------------------
+Array size = 2000000, Offset = 0
+Total memory required = 45.8 MB.
+Each test is run 10 times, but only
+the *best* time for each is used.
+-------------------------------------------------------------
+Printing one line per active thread....
+-------------------------------------------------------------
+Your clock granularity/precision appears to be be 1 microseconds.
+Each test below will take on the order of 1579 microseconds.
+   (= 1579 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       12200.5025       0.0027       0.0026       0.0027
+Scale:      12474.9259       0.0027       0.0026       0.0028
+Add:        11837.1703       0.0041       0.0041       0.0042
+Triad:      11761.7919       0.0041       0.0041       0.0041
+-------------------------------------------------------------
+Solution Validates
+-------------------------------------------------------------
+No. of nodes 4; nodes with errors: 0
+Minimum Copy MB/s 11704.69
+Average Copy MB/s 11946.01
+Maximum Copy MB/s 12200.50
+Minimum Scale MB/s 11825.35
+Average Scale MB/s 12242.13
+Maximum Scale MB/s 12474.93
+Minimum Add MB/s 11513.59
+Average Add MB/s 11708.68
+Maximum Add MB/s 11837.17
+Minimum Triad MB/s 11463.76
+Average Triad MB/s 11662.64
+Maximum Triad MB/s 11799.71
+-------------------------------------------------------------
+STREAM version $Revision: 5.8 $
+-------------------------------------------------------------
+This system uses 8 bytes per DOUBLE PRECISION word.
+-------------------------------------------------------------
+Array size = 2000000, Offset = 0
+Total memory required = 45.8 MB.
+Each test is run 10 times, but only
+the *best* time for each is used.
+-------------------------------------------------------------
+Printing one line per active thread....
+-------------------------------------------------------------
+Your clock granularity/precision appears to be be 1 microseconds.
+Each test below will take on the order of 1737 microseconds.
+   (= 1737 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       12260.6859       0.0027       0.0026       0.0028
+Scale:      12436.7798       0.0026       0.0026       0.0027
+Add:        11825.3505       0.0041       0.0041       0.0042
+Triad:      11796.9408       0.0041       0.0041       0.0042
+-------------------------------------------------------------
+Solution Validates
+-------------------------------------------------------------
+No. of nodes 6; nodes with errors: 0
+Minimum Copy MB/s 11640.74
+Average Copy MB/s 11976.88
+Maximum Copy MB/s 12260.69
+Minimum Scale MB/s 12003.02
+Average Scale MB/s 12277.79
+Maximum Scale MB/s 12455.25
+Minimum Add MB/s 11428.62
+Average Add MB/s 11620.18
+Maximum Add MB/s 11825.35
+Minimum Triad MB/s 11358.34
+Average Triad MB/s 11638.17
+Maximum Triad MB/s 11796.94
+-------------------------------------------------------------
+STREAM version $Revision: 5.8 $
+-------------------------------------------------------------
+This system uses 8 bytes per DOUBLE PRECISION word.
+-------------------------------------------------------------
+Array size = 2000000, Offset = 0
+Total memory required = 45.8 MB.
+Each test is run 10 times, but only
+the *best* time for each is used.
+-------------------------------------------------------------
+Printing one line per active thread....
+-------------------------------------------------------------
+Your clock granularity/precision appears to be be 1 microseconds.
+Each test below will take on the order of 1697 microseconds.
+   (= 1697 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function      Rate (MB/s)   Avg time     Min time     Max time
+Copy:       12035.3056       0.0028       0.0027       0.0029
+Scale:      12115.7003       0.0027       0.0026       0.0028
+Add:        11488.6209       0.0042       0.0042       0.0043
+Triad:      11658.9409       0.0042       0.0041       0.0045
+-------------------------------------------------------------
+Solution Validates
+-------------------------------------------------------------
+No. of nodes 8; nodes with errors: 0
+Minimum Copy MB/s 11510.95
+Average Copy MB/s 11983.39
+Maximum Copy MB/s 12246.14
+Minimum Scale MB/s 11712.87
+Average Scale MB/s 12162.85
+Maximum Scale MB/s 12465.66
+Minimum Add MB/s 11350.66
+Average Add MB/s 11623.80
+Maximum Add MB/s 11860.88
+Minimum Triad MB/s 11444.86
+Average Triad MB/s 11652.31
+Maximum Triad MB/s 11817.02
 
 
