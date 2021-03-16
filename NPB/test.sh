@@ -1,3 +1,8 @@
+#MAKE SURE TO SUPPLY THE TEST NUMBER AS AN ARGUMENT WHEN RUNNING THE SCRIPT
+# ./test.sh 1
+# ./test.sh 2
+# ./test.sh 3
+
 DATE=`date "+%b-%d"`
 
 mpiexec -host master ep.A.1 > ./Tests/"${DATE} | Test $1 | 1 Node.txt"
