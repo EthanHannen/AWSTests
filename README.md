@@ -15,7 +15,7 @@ starcluster start smallcluster
 
 4. Once running, use this script to transfer the tar folders or do it manually:
 
-```
+```shell
 #Script for uploading tar files to the master node
 IP='YOUR_MASTER_IP_HERE'
 USER='YOUR_USERNAME'
