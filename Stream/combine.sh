@@ -1,0 +1,1 @@
+cat Test1 Test2 Test4 Test6 Test8 > TestResults

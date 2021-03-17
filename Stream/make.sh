@@ -1,0 +1,1 @@
+mpicc -DPARALLEL_MPI -O3 stream_mpi.c -o stream_mpi
