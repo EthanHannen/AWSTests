@@ -1,0 +1,43 @@
+IOR-2.10.3: MPI Coordinated Test of Parallel I/O
+
+Run began: Wed Mar 17 20:40:09 2021
+Command line used: IOR -b 4m -t 4m -i 4
+Machine: Linux master
+
+Summary:
+	api                = POSIX
+	test filename      = testFile
+	access             = single-shared-file
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 6 (1 per node)
+	repetitions        = 4
+	xfersize           = 4 MiB
+	blocksize          = 4 MiB
+	aggregate filesize = 24 MiB
+
+WARNING: inconsistent file size by different tasks.
+WARNING: Expected aggregate file size       = 25165824.
+WARNING: Stat() of aggregate file size      = 23592960.
+WARNING: Using actual aggregate bytes moved = 25165824.
+WARNING: inconsistent file size by different tasks.
+WARNING: Expected aggregate file size       = 25165824.
+WARNING: Stat() of aggregate file size      = 24117248.
+WARNING: Using actual aggregate bytes moved = 25165824.
+WARNING: inconsistent file size by different tasks.
+WARNING: Expected aggregate file size       = 25165824.
+WARNING: Stat() of aggregate file size      = 24510464.
+WARNING: Using actual aggregate bytes moved = 25165824.
+WARNING: inconsistent file size by different tasks.
+WARNING: Expected aggregate file size       = 25165824.
+WARNING: Stat() of aggregate file size      = 23199744.
+WARNING: Using actual aggregate bytes moved = 25165824.
+Operation  Max (MiB)  Min (MiB)  Mean (MiB)   Std Dev  Max (OPs)  Min (OPs)  Mean (OPs)   Std Dev  Mean (s)  
+---------  ---------  ---------  ----------   -------  ---------  ---------  ----------   -------  --------
+write          37.57      37.40       37.47      0.07       9.39       9.35        9.37      0.02   0.64051   EXCEL
+read           44.64      15.76       35.96     11.90      11.16       3.94        8.99      2.97   0.80411   EXCEL
+
+Max Write: 37.57 MiB/sec (39.40 MB/sec)
+Max Read:  44.64 MiB/sec (46.81 MB/sec)
+
+Run finished: Wed Mar 17 20:40:18 2021
