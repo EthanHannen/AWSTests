@@ -13,7 +13,7 @@ IOR & NPB Setup Instructions
 starcluster start smallcluster
 ```
 
-4. Once running, use this script to transfer the tar folders or do it manually:
+3. Once running, use this script to transfer the tar folders or do it manually:
 
 ```shell
 #Script for uploading tar files to the master node
@@ -23,7 +23,7 @@ scp -i ~/.ssh/AWSKey.pem ./NPB3.3.1.tar.gz youruser@$IP:/home/$USER/
 scp -i ~/.ssh/AWSKey.pem ./IOR.tgz youruser@$IP:/home/$USER/
 ```
 
-5. SSH into your master node and unzip the compressed folders.
+4. SSH into your master node and unzip the compressed folders.
 
 ```
 starcluster sshmaster smallcluster
@@ -32,7 +32,7 @@ tar -xf NPB3.3.1.tar.gz
 tar -xf IOR.tgz
 ```
 
-6. Create the NPB binaries. Note: Make sure you have NPB 3.3 and not 3.4.
+5. Create the NPB binaries. Note: Make sure you have NPB 3.3 and not 3.4.
 
 ```
 cd ./NPB3.3.1/NPB3.3-MPI/config
@@ -48,22 +48,22 @@ make EP NPROCS=8 CLASS=A
 cd bin
 ```
 
-7. Upload all ep.A.x files in the bin folder to your github
+6. Upload all ep.A.x files in the bin folder to your github
 
-8. Make the IOR binary
+7. Make the IOR binary
 
 ```
 cd ~/home/youruser/IOR/src/C
 make
 ```
 
-9. Upload the created IOR binary to your github. Now, each time you set up star cluster, just clone your github folder so you don't have to compile everything again.
+8. Upload the created IOR binary to your github. Now, each time you set up star cluster, just clone your github folder so you don't have to compile everything again.
 
 ```
 cd ~home/youruser/yourgithubfolder
 ```
 
-10. Create this script for NPB:
+9. Create this script for NPB:
 
 ```
 # Usage:   ./test.sh TEST_NUM_OPTION
@@ -84,7 +84,7 @@ mpiexec -host master,node001,node002,node003,node004,node005,node006,node007 ep.
 ```
 
 
-11. Create this script for IOR:
+10. Create this script for IOR:
 
 ```
 # Usage:   ./test.sh TEST_NUM_OPTION
@@ -104,7 +104,7 @@ mpiexec -host master,node001,node002,node003,node004,node005 IOR -b 4m -t 4m -i 
 mpiexec -host master,node001,node002,node003,node004,node005,node006,node007 IOR -b 4m -t 4m -i 4 > ./Tests/"${DATE} - IOR Test $1 - 8 Node.txt"
 ```
 
-12. Run each test.sh script 3 times for the day with the test number as a command line argument.
+11. Run each test.sh script 3 times for the day with the test number as a command line argument.
 
 Example:
 
@@ -112,7 +112,7 @@ Example:
 * test.sh 2
 * test.sh 3
 
-13. Update your git repo
+12. Update your git repo
 
 ```git
 git add *
