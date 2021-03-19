@@ -48,7 +48,7 @@ make EP NPROCS=8 CLASS=A
 cd bin
 ```
 
-6. Upload all ep.A.x files in the bin folder to your github
+6. Because the AMI image is the same for each instance of a Starcluster node, I figured it would be easiest to compile these binaries once on the given architecture, then save them for later use since new Starcluster nodes will have the same architecture and required dependencies. Once I compile these, I upload them to my Github repo and just download the repo again when I set up a new cluster. So, to make life easier, upload all ep.A.x files in the bin folder to your github.
 
 7. Make the IOR binary
 
