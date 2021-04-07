@@ -37,6 +37,9 @@ tar -xf IOR.tgz
 ```
 cd ./NPB3.3.1/NPB3.3-MPI/config
 cp ./NAS.samples/make.def_sun_mpich ./make.def
+```
+6. Open the make.def file and comment out every line that has the ```-fast``` option in it. Then...
+```
 cd ..
 
 make EP NPROCS=1 CLASS=A
@@ -48,22 +51,22 @@ make EP NPROCS=8 CLASS=A
 cd bin
 ```
 
-6. Because the AMI image is the same for each instance of a Starcluster node, I figured it would be easiest to compile these binaries once on the given architecture, then save them for later use since new Starcluster nodes will have the same architecture and required dependencies. Once I compile these, I upload them to my Github repo and just download the repo again when I set up a new cluster. So, to make life easier, upload all ep.A.x files in the bin folder to your github.
+7. Because the AMI image is the same for each instance of a Starcluster node, I figured it would be easiest to compile these binaries once on the given architecture, then save them for later use since new Starcluster nodes will have the same architecture and required dependencies. Once I compile these, I upload them to my Github repo and just download the repo again when I set up a new cluster. So, to make life easier, upload all ep.A.x files in the bin folder to your github.
 
-7. Make the IOR binary
+8. Make the IOR binary
 
 ```
 cd ~/home/youruser/IOR/src/C
 make
 ```
 
-8. Upload the created IOR binary to your github. Now, each time you set up star cluster, just clone your github folder so you don't have to compile everything again.
+9. Upload the created IOR binary to your github. Now, each time you set up star cluster, just clone your github folder so you don't have to compile everything again.
 
 ```
 cd ~home/youruser/yourgithubfolder
 ```
 
-9. Create this script for NPB:
+10. Create this script for NPB:
 
 ```
 # Usage:   ./test.sh TEST_NUM_OPTION
@@ -84,7 +87,7 @@ mpiexec -host master,node001,node002,node003,node004,node005,node006,node007 ep.
 ```
 
 
-10. Create this script for IOR:
+11. Create this script for IOR:
 
 ```
 # Usage:   ./test.sh TEST_NUM_OPTION
@@ -104,7 +107,7 @@ mpiexec -host master,node001,node002,node003,node004,node005 IOR -b 4m -t 4m -i 
 mpiexec -host master,node001,node002,node003,node004,node005,node006,node007 IOR -b 4m -t 4m -i 4 > ./Tests/"${DATE} - IOR Test $1 - 8 Node.txt"
 ```
 
-11. Run each test.sh script 3 times for the day with the test number as a command line argument.
+12. Run each test.sh script 3 times for the day with the test number as a command line argument.
 
 Example:
 
@@ -112,7 +115,7 @@ Example:
 * test.sh 2
 * test.sh 3
 
-12. Update your git repo
+13. Update your git repo
 
 ```git
 git add *
